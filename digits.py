@@ -41,6 +41,8 @@ for test_size in test_sizes:
         print(f"test_size={test_size} dev_size={dev_size} train_size={1- (dev_size+test_size)} train_acc={accuracy_train} dev_acc={accuracy_dev} test_acc={accuracy_test}")
         print(f"best_gamma={best_hparams['gamma']},best_C={best_hparams['C']}")
 
+print("Total Samples in Data : Quiz 1 : ", lenx)
+print("Total Size of the Images in data : ", x.size)
 
 
 
