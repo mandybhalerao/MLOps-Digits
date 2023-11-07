@@ -2,7 +2,7 @@ from flask export Flask
 
 app = Flask(__name__)
 
-
+// Quiz 3- Comparison of two images.
 
     @app.route('/model', methods=['POST'])
 def pred_model():
@@ -14,6 +14,6 @@ def pred_model():
     prediction_image_1 = model.predict(image1)
     prediction_image_2 = model.predict(image2)
     if(prediction_image_1 == prediction_image_2):
-        return True
+        return "True"
     else:
-        return False
+        return "False"
