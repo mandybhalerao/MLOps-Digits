@@ -11,7 +11,7 @@ def index(name):
 @app.route('/predict', methods=['POST'])
 def pred_model():
     js = request.get_json()
-    image1 = js['image']
+    image1 = [js['image']]
     #Assuming this is the path of our best trained model
     dirname = os.path.dirname(__file__)
     filename = os.path.join(dirname, '../models/svmgamma:0.001_C:1.joblib')
